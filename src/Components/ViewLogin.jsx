@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import NavBar from "./NavBar";
 
 
 const ViewLogin = () => {
@@ -21,7 +22,9 @@ const ViewLogin = () => {
   }, []);
 
   return (
+    
     <div className="container mt-4">
+        <NavBar/>
   
       <div className="row g-4">
         {data.map((value, index) => (
